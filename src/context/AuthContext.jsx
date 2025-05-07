@@ -72,16 +72,6 @@ export const AuthProvider = ({ children }) => {
     checkAuth
   };
 
-   // Optional: Show a global loading state while checking initial auth
-   if (isLoading && typeof window !== 'undefined') { // Avoid SSR issues with this check
-     return (
-        <div className="flex items-center justify-center min-h-screen">
-            <LoadingSpinner />
-        </div>
-     )
-   }
-
-
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
 

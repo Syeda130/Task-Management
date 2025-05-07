@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '@/components/common/Button';
 
 const Modal = ({ isOpen, onClose, title, children, confirmText = "Confirm", cancelText = "Cancel", onConfirm, isConfirming = false }) => {
   if (!isOpen) return null;
