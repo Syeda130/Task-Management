@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+   
     "lint": "next lint",
-    "ws:dev": "node websocket-server.js"
+    "ws:dev": "node websocket-server.js",
+  "start": "node server.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
